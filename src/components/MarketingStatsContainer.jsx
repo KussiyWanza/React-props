@@ -1,5 +1,5 @@
 import React from "react";
-import digital_marketing_stats from "../data";
+import { digital_marketing_stats } from "../data";
 import { MarketingStatsCard } from "./MarketingStatsCard";
 
 export const MarketingStatsContainer = () => {

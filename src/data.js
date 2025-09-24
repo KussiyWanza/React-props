@@ -30,4 +30,4 @@ const products = [
     },
 ];
 
-export default { products, digital_marketing_stats };
+export { products, digital_marketing_stats };
