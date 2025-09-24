@@ -4,6 +4,7 @@ import WebProgrammingCard from "./components/WebProgrammingCard";
 import DigitalSchool from "./components/DigitalSchool";
 import DigitalSchoolContent from "./components/DigitalSchoolContent";
 import MarketingStatsContainer from "./components/MarketingStatsContainer";
+import ProductsContainer from "./components/ProductsContainer";
 
 function App() {
   return (
@@ -81,7 +82,7 @@ function App() {
       </div>
 
       {/*New content*/}
-      <MarketingStatsContainer />
+      <ProductsContainer />
     </section>
   );
 }

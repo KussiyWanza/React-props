@@ -10,7 +10,7 @@ function ProductsContainer() {
             <ProductCard
               image_link={item.image_link}
               product_name={item.product_name}
-              Price={item.price}
+              price={item.price}
               storage={item.storage}
             />
           );
