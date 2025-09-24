@@ -1,25 +1,18 @@
 import { products } from "../data";
+import ProductCard from "./ProductCard";
 
 function ProductsContainer() {
-  const hobbies = ["Singling", "Praying", "Sleeping"];
   return (
     <>
       <div>
-        {hobbies.map((item) => {
-          return <p>{item}</p>;
-        })}
-      </div>
-      <div>
         {products.map((item) => {
           return (
-            <div>
-              <img src={item.image_link} alt="" />
-              <h2>{item.product_name}</h2>
-              <div>
-                <p>{item.price}</p>
-                <p>{item.storage}</p>
-              </div>
-            </div>
+            <ProductCard
+              image_link={item.image_link}
+              product_name={item.product_name}
+              Price={item.price}
+              storage={item.storage}
+            />
           );
         })}
       </div>
