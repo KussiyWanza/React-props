@@ -1,16 +1,29 @@
 import { products } from "../data";
 
 function ProductsContainer() {
-  const name = "John";
-  const age = 45;
-  const foods = ["rice", "beans", "eba", "noodles"];
-  return foods(
-    <div>
-      {name} <p>{age}</p>
-      {foods.map((item) => (
-        <p className="bg-red-500 text-white mt-5">{item}</p>
-      ))}
-    </div>
+  const hobbies = ["Singling", "Praying", "Sleeping"];
+  return (
+    <>
+      <div>
+        {hobbies.map((item) => {
+          return <p>{item}</p>;
+        })}
+      </div>
+      <div>
+        {products.map((item) => {
+          return (
+            <div>
+              <img src={item.image_link} alt="" />
+              <h2>{item.product_name}</h2>
+              <div>
+                <p>{item.price}</p>
+                <p>{item.storage}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
