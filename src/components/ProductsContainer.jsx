@@ -8,6 +8,7 @@ function ProductsContainer() {
         {products.map((item) => {
           return (
             <ProductCard
+              key={item.id}
               image_link={item.image_link}
               product_name={item.product_name}
               price={item.price}
