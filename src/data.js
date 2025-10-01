@@ -19,14 +19,14 @@ const products = [
         product_name: "Iphone 17 pro max",
         price: 2500,
         storage: "1TB",
-        image_link: "/public/17promax.jpg",
+        image_link: "/17promax.jpg",
     },
     {
         id: "uiy1ts",
         product_name: "Samsung s20",
         price: 30000,
         storage: "2TB",
-        image_link: "/public/s20.jpg",
+        image_link: "/s20.jpg",
     },
 ];
 
